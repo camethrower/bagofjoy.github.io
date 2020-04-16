@@ -35,10 +35,10 @@
                     </div>
                     <div id="home_head_social_icon">
                         <a href="https://www.instagram.com/bagofjoy.hk/" target="_blank">
-                            <img src="200w/Asset 3.png" alt="IG" class="icon">
+                            <img src="Asset 3.png" alt="IG" class="icon">
                         </a>
                         <a href="https://www.facebook.com/bagofjoy.hk/" target="_blank">
-                            <img src="200w/Asset 4.png" alt="FB" class="icon">
+                            <img src="Asset 4.png" alt="FB" class="icon">
                         </a>
                     </div>
                 </div>
@@ -57,10 +57,44 @@
                         <div id="home_body_top_left_intro">
                             <h4>The Bag of Joy Project is a service project start-up by 2 Diocesan Boys' School students who want to deliver joy to lives of those who are facing a tough time during the epidemic by delivering Bags of Joy to them. We are asking for donations in the form of supplies. The collected Bag of Joy will be distributed to children and elderlies in need through community centres and direct deliveries.</h4>
                         </div>
-                        <div id="home_body_top_left_donate"></div>
+                        <div id="home_body_top_left_donate">
+                            <h1>
+                                Do you want to bring warmth to children and the elderlies in need? <br><a href="https://forms.gle/3SqoxLwVVSTcqW346" style="color: #ff1e1e">Sign up to donate Bags of Joy!</a>
+                            </h1>
+                            <a href="https://forms.gle/3SqoxLwVVSTcqW346"><button><b>Donate Bags of Joy </b><br> (Google Form)</button></a>
+                        </div>
                     </div>
                     <div id="home_body_top_right">
-                        <img id="poster" src="Bag of Joy.jpg" alt="Poster" class="poster">
+                        <img id="poster" src="Bag of Joy.jpg" alt="Main Promotional Poster" class="poster">
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+
+                        <script>
+                        // Get the modal
+                        var modal = document.getElementById('myModal');
+                        
+                        // Get the image and insert it inside the modal - use its "alt" text as a caption
+                        var img = document.getElementById('poster');
+                        var modalImg = document.getElementById("img01");
+                        var captionText = document.getElementById("caption");
+                        img.onclick = function(){
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                        }
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() { 
+                            modal.style.display = "none";
+                        }
+                        </script>
                     </div>
                 </div>
                 <div id="home_body_bar">
