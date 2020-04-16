@@ -1,0 +1,256 @@
+body {
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+h2{
+    line-height: 28px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#home_container{
+    background-color: cornsilk;
+    width:1000px;
+    min-height:1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    /*border: 1px solid green;*/
+}
+
+#home_header {
+    width:100%;
+    height: 100px;
+    background-color: white;
+    /*border: 1px solid blue;*/
+    overflow:hidden;
+}
+
+#home_header_logo {
+    width: 30%;
+    height: 100%;
+    float:left;
+}
+
+#logo{
+    position:relative;
+    left: 15px; 
+    top: 10px;
+    width:80%; 
+    display: block;
+}
+
+#home_head_social{
+    float: right;
+    float: top;
+    /*border: 1px solid blue;*/
+}
+
+#home_head_social_text{
+    float: left;
+    /*border: 1px solid blue;*/
+    margin-right: 10px;
+}
+
+#home_head_social_icon{
+    position:relative;
+    top:10px;
+    float: right;
+    /*border: 1px solid blue;*/
+}
+
+.icon{
+    position:relative;
+    width: 70px;
+    height: 70px;
+    opacity: 0.65;
+}
+
+.icon:hover{
+    opacity: 1.0;
+}
+
+#home_nav {
+    height:50px;
+    background: #55d6aa;
+    border: 1px solid blue;
+    margin: 10px;
+}
+
+#home_nav ul{
+    margin-left:-17px;
+    margin-top:10px;
+    padding: 0px;
+    list-style: none;
+}
+
+#home_nav li{
+    display: inline-block;
+    margin-left: 11%;
+    position: relative;
+    padding-top: 0px;   
+}
+
+#home_nav ul li a{
+    color: #444444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#home_nav ul li a:hover{
+    color: black;
+}
+
+#home_nav ul li a::before{
+    content: '';
+    display:block;
+    height: 5px;
+    background-color: #444444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+#home_nav ul li a:hover::before{
+    width: 100%;
+}
+
+#home_body {
+    width: 100%;
+    height: 1050px;
+    border: 1px solid blue;
+}
+
+#home_body_top{
+    width: 100%;
+    height: 620px;
+    border: 1px solid blue;
+}
+
+#home_body_top_left{
+    width: 56%;
+    height: 100%;
+    float: left;
+    border: 1px solid blue;
+}
+
+#home_body_top_left_intro{
+    padding: 15px;
+    border: 1px solid blue;
+}
+
+#home_body_top_right{
+    width: 43.6%;
+    height: 100%;
+    float: right;
+    border: 1px solid blue;
+}
+
+#poster{
+    width:100%;
+}
+
+#home_body_bar{
+    width: 100%;
+    height: 120px;
+    border: 1px solid blue;
+}
+
+#home_body_bar_text h1{
+    text-align: center;
+    line-height: 15px;
+}
+
+.meter { 
+	height: 20px;
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+	box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(43,194,83);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(43,194,83) 37%,
+      rgb(84,240,84) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.meter > span:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image: linear-gradient(
+      -45deg, 
+      rgba(255, 255, 255, .2) 25%, 
+      transparent 25%, 
+      transparent 50%, 
+      rgba(255, 255, 255, .2) 50%, 
+      rgba(255, 255, 255, .2) 75%, 
+      transparent 75%, 
+      transparent
+    );
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+#home_body_bottom{
+    width: 100%;
+    height: 300px;
+    border: 1px solid blue;
+}
+
+#home_body_bottom_ngo{
+    float: left;
+    width: 49.5%;
+    height: 100%;
+    border: 1px solid blue;
+}
+
+#home_body_bottom_vid{
+    float: right;
+    width: 49.5%;
+    height: 100%;
+    border: 1px solid blue;
+}
+
+iframe{
+    border:none;
+}
+
+#home_footer{
+    text-align: center;
+    clear: both;
+    width: 100%;
+    height: 40px;
+    border: 1px solid red;
+}
