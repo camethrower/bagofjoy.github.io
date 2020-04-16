@@ -10,6 +10,19 @@ a{
     text-decoration: none;
 }
 
+button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+
 #home_container{
     background-color: cornsilk;
     width:1000px;
@@ -74,9 +87,10 @@ a{
 
 #home_nav {
     height:50px;
-    background: #55d6aa;
-    border: 1px solid blue;
+    background: black;
+    border: 1px solid white;
     margin: 10px;
+    border-radius: 20px;
 }
 
 #home_nav ul{
@@ -90,25 +104,24 @@ a{
     display: inline-block;
     margin-left: 11%;
     position: relative;
-    padding-top: 0px;   
 }
 
 #home_nav ul li a{
-    color: #444444;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
 }
 
 #home_nav ul li a:hover{
-    color: black;
+    color: rgb(168, 168, 168);
 }
 
 #home_nav ul li a::before{
     content: '';
     display:block;
     height: 5px;
-    background-color: #444444;
+    background-color: rgb(255, 118, 118);
 
     position: absolute;
     top: 0;
@@ -145,15 +158,109 @@ a{
     border: 1px solid blue;
 }
 
+#home_body_top_left_donate{
+    padding: 10px;
+    text-align: center;
+}
+
+#sp{
+    color:red;
+    text-align:center;
+}
+
+
+
+#home_body_top_left_donate button:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(141, 141, 141, 0.19);
+}
+
 #home_body_top_right{
     width: 43.6%;
     height: 100%;
     float: right;
     border: 1px solid blue;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 #poster{
     width:100%;
+}
+
+#poster:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+  
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+/* Add Animation */
+.modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+  
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
 }
 
 #home_body_bar{
