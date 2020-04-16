@@ -22,7 +22,9 @@
     <body>
         <div id="home_header">
             <div id="home_header_logo">
-
+                <a href="home.html">
+                    <img id="logo" src="logo_extended.png">
+                </a>
             </div>
             <div id="home_head_social">
 
@@ -30,10 +32,18 @@
         </div>
         <div id="home_nav">
             <ul id="menu">
-                <li>Homepage</li>
-                <li>How to make a bag of joy?</li>
-                <li>Blog</li>
-                <li>About us</li>
+                <a href="home.html">
+                    <li id="menu_1" style="background-color:#F19819">Home</li>
+                </a>
+                <a href="instructions.html" onmouseover="light_up('menu_2')" onmouseout="light_down('menu_2')">
+                    <li id="menu_2" style="background-color: rgb(166, 206, 56);">Instructions</li>
+                </a>
+                <a href="blog.html" onmouseover="light_up('menu_3')" onmouseout="light_down('menu_3')">
+                    <li id="menu_3" style="background-color: rgb(166, 206, 56);">Blog</li>
+                </a>
+                <a href="about.html" onmouseover="light_up('menu_2')" onmouseout="light_down('menu_4')">
+                    <li id="menu_4" style="background-color: rgb(166, 206, 56);">About Us</li>
+                </a>
               </ul>  
         </div>
         <div id="home_body">
